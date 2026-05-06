@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linear Equations and Linear Functions - HW6</title>
+  <link rel="stylesheet" href="hw6.css">
+</head>
+<body onload="initializePage()">
+  <header class="site-header">
+    <div class="banner-pattern" aria-hidden="true">
+      <span>✏️</span><span>∑</span><span>π</span><span>√</span><span>+</span><span>📐</span>
+      <span>x</span><span>÷</span><span>=</span><span>📏</span><span>y</span><span>∞</span>
+    </div>
+    <div class="banner-content">
+      <h1 id="mainTitle">Linear Equations and Linear Functions</h1>
+      <p class="subtitle">Interactive Study Page for Homework 6</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Quick Review</h2>
+      <p class="lesson-text">
+        A linear equation has the form <strong>y = mx + b</strong>, where
+        <strong>m</strong> is the slope and <strong>b</strong> is the y-intercept.
+      </p>
+      <p class="lesson-text" id="changeableText">
+        Linear functions create straight lines when graphed on the coordinate plane.
+      </p>
+
+      <div class="button-row">
+        <button id="bgButton" type="button">Change Background Color</button>
+        <button id="textButton" type="button">Change Text Content</button>
+        <button id="alertButton" type="button">Show Study Alert</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Student Login</h2>
+      <form id="studentForm" class="student-form">
+        <label for="studentName">Name</label>
+        <input id="studentName" name="studentName" type="text" placeholder="Enter your name">
+
+        <label for="studentPassword">Password</label>
+        <input id="studentPassword" name="studentPassword" type="password" placeholder="At least 6 characters">
+
+        <button id="submitButton" type="submit">Log In</button>
+      </form>
+      <p id="formMessage" class="message-area"></p>
+    </section>
+
+    <section id="practiceSection" class="card hidden">
+      <h2>Unlocked Practice Topics</h2>
+      <p class="lesson-text">Choose a topic to see a matching problem and graph notes.</p>
+
+      <label for="topicSelect">Choose a topic</label>
+      <select id="topicSelect" name="topicSelect">
+        <option value="">-- Select a topic --</option>
+        <option value="slope">Slope</option>
+        <option value="intercept">Y-Intercept</option>
+        <option value="slopeIntercept">Slope-Intercept Form</option>
+        <option value="pointSlope">Point-Slope Form</option>
+        <option value="standardForm">Standard Form</option>
+        <option value="parallelPerpendicular">Parallel and Perpendicular Lines</option>
+        <option value="systems">Systems of Linear Equations</option>
+        <option value="graphing">Graphing Linear Functions</option>
+      </select>
+
+      <div id="topicOutput" class="topic-output">
+        <h3 id="topicTitle">Topic details will appear here.</h3>
+        <p id="topicOverview" class="lesson-text"></p>
+        <p id="topicSteps" class="lesson-text"></p>
+        <p id="topicProblem" class="lesson-text"></p>
+        <p id="topicGraph" class="lesson-text"></p>
+      </div>
+
+      <div class="graph-panel">
+        <h3>Interactive Graph</h3>
+        <p id="graphEquation" class="lesson-text">Select a topic to draw its line.</p>
+        <svg id="graphSvg" viewBox="0 0 320 320" class="graph-svg" aria-label="line graph"></svg>
+      </div>
+    </section>
+
+    <section id="quizSection" class="card hidden">
+      <h2>Mini Quiz</h2>
+      <p id="quizQuestion" class="lesson-text">Pick a topic first to load a mini quiz.</p>
+      <div class="button-row quiz-options">
+        <button id="quizBtn0" class="quiz-button" type="button" data-index="0">Option A</button>
+        <button id="quizBtn1" class="quiz-button" type="button" data-index="1">Option B</button>
+        <button id="quizBtn2" class="quiz-button" type="button" data-index="2">Option C</button>
+      </div>
+      <p id="quizResult" class="message-area"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Created for JavaScript Homework 6</p>
+  </footer>
+
+  <script src="hw6.js"></script>
+</body>
+</html>
