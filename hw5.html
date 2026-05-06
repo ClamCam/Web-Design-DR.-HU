@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linear Learning Hub | Equations and Functions</title>
+  <!-- Google Font for modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="hw5.css" />
+</head>
+<body>
+  <!-- Background glow decorations -->
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="#home" class="brand">Linear Learning Hub</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+      <ul class="nav-links">
+        <li><a href="#equations">Equations</a></li>
+        <li><a href="#functions">Functions</a></li>
+        <li><a href="#concepts">Concepts</a></li>
+        <li><a href="#examples">Examples</a></li>
+        <li><a href="#graphs">Graphs</a></li>
+        <li><a href="#practice">Practice</a></li>
+        <li><a href="#interactive">Interactive</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <!-- Hero section -->
+    <section class="hero container">
+      <div class="hero-content">
+        <p class="eyebrow">College Algebra Essentials</p>
+        <h1>Master Linear Equations and Linear Functions</h1>
+        <p class="hero-subtitle">
+          Learn the foundations of linear modeling: slope, y-intercept, equation
+          forms, graph interpretation, and real-world applications.
+        </p>
+        <div class="hero-actions">
+          <a href="#interactive" class="btn btn-primary">Try Equation Builder</a>
+          <a href="#practice" class="btn btn-secondary">Start Practice Quiz</a>
+        </div>
+      </div>
+      <div class="hero-card card">
+        <h3>Quick Formula</h3>
+        <p class="formula">y = mx + b</p>
+        <ul>
+          <li><strong>m</strong> = slope (rate of change)</li>
+          <li><strong>b</strong> = y-intercept (starting value)</li>
+          <li><strong>x</strong> = input, <strong>y</strong> = output</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Core learning sections -->
+    <section id="equations" class="content-section container">
+      <h2>What Are Linear Equations?</h2>
+      <div class="card-grid two-col">
+        <article class="card">
+          <h3>Definition</h3>
+          <p>
+            A linear equation is an equation that creates a straight line when graphed.
+            It has variables raised only to the first power and no variable multiplication.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Common Forms</h3>
+          <p>
+            Examples include <strong>2x + 3y = 6</strong>, <strong>y = 4x - 1</strong>,
+            and <strong>Ax + By = C</strong>. These all represent linear relationships.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="functions" class="content-section container">
+      <h2>What Are Linear Functions?</h2>
+      <div class="card-grid two-col">
+        <article class="card">
+          <h3>Definition</h3>
+          <p>
+            A linear function is a function with a constant rate of change.
+            As <strong>x</strong> increases by 1, <strong>y</strong> changes by a fixed amount.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Function Rule</h3>
+          <p>
+            A linear function is often written as <strong>f(x) = mx + b</strong>.
+            This form makes slope and y-intercept easy to identify.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="concepts" class="content-section container">
+      <h2>Key Concepts</h2>
+      <div class="card-grid four-col">
+        <article class="card concept-card">
+          <h3>Slope (m)</h3>
+          <p>
+            Slope tells how steep a line is:
+            <strong>m = (change in y) / (change in x)</strong>.
+          </p>
+        </article>
+        <article class="card concept-card">
+          <h3>Y-Intercept (b)</h3>
+          <p>
+            The y-intercept is where the line crosses the y-axis, at <strong>x = 0</strong>.
+          </p>
+        </article>
+        <article class="card concept-card">
+          <h3>Slope-Intercept Form</h3>
+          <p>
+            <strong>y = mx + b</strong> is the most practical form for graphing and analysis.
+          </p>
+        </article>
+        <article class="card concept-card">
+          <h3>Direction Meaning</h3>
+          <p>
+            Positive slope rises left-to-right; negative slope falls left-to-right.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="examples" class="content-section container">
+      <h2>Real-World Examples</h2>
+      <div class="card-grid three-col">
+        <article class="card">
+          <h3>Taxi Fare</h3>
+          <p>
+            Cost model: <strong>y = 2x + 5</strong><br />
+            $5 start fee + $2 per mile.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Hourly Pay</h3>
+          <p>
+            Earnings model: <strong>y = 18x</strong><br />
+            Earn $18 per hour worked.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Phone Plan</h3>
+          <p>
+            Monthly bill: <strong>y = 0.1x + 25</strong><br />
+            Base fee plus a per-text charge.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="graphs" class="content-section container">
+      <h2>Graph Examples</h2>
+      <div class="card-grid two-col">
+        <article class="card">
+          <h3>Graph A: y = 2x + 1</h3>
+          <p>Points: (0,1), (1,3), (2,5), (3,7)</p>
+          <div class="graph-points">
+            <span>(0,1)</span><span>(1,3)</span><span>(2,5)</span><span>(3,7)</span>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Graph B: y = -x + 4</h3>
+          <p>Points: (0,4), (1,3), (2,2), (3,1)</p>
+          <div class="graph-points">
+            <span>(0,4)</span><span>(1,3)</span><span>(2,2)</span><span>(3,1)</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Quiz / practice section -->
+    <section id="practice" class="content-section container">
+      <h2>Practice Problems</h2>
+      <p class="section-intro">
+        Test your understanding with this mini-quiz. Your score updates as you answer.
+      </p>
+      <div class="card quiz-card">
+        <div class="quiz-meta">
+          <p id="question-counter">Question 1 of 5</p>
+          <p id="score-display">Score: 0</p>
+        </div>
+        <h3 id="quiz-question">Loading question...</h3>
+        <div id="quiz-options" class="quiz-options"></div>
+        <div class="quiz-actions">
+          <button id="next-btn" class="btn btn-primary" disabled>Next Question</button>
+          <button id="restart-btn" class="btn btn-secondary">Restart Quiz</button>
+        </div>
+        <p id="quiz-feedback" class="quiz-feedback"></p>
+      </div>
+      <div class="card answer-card">
+        <h3>Sample Practice Problems with Answers</h3>
+        <ol>
+          <li>If slope is 3 and y-intercept is -2, equation is <strong>y = 3x - 2</strong>.</li>
+          <li>In <strong>y = -4x + 9</strong>, slope is <strong>-4</strong> and y-intercept is <strong>9</strong>.</li>
+          <li>Line through points (0,5) and (2,9) has slope <strong>2</strong>, so equation is <strong>y = 2x + 5</strong>.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Interactive equation generator -->
+    <section id="interactive" class="content-section container">
+      <h2>Interactive Equation Generator</h2>
+      <p class="section-intro">
+        Enter values for <strong>m</strong> and <strong>b</strong> to build your own linear equation.
+      </p>
+      <div class="card interactive-card">
+        <div class="input-grid">
+          <label for="m-value">Slope (m)</label>
+          <input id="m-value" type="number" value="1" step="0.1" />
+          <label for="b-value">Y-Intercept (b)</label>
+          <input id="b-value" type="number" value="0" step="0.1" />
+        </div>
+        <p class="equation-output">
+          Updated Equation: <span id="equation-display">y = 1x + 0</span>
+        </p>
+
+        <!-- Live graph area for y = mx + b -->
+        <div class="graph-visual">
+          <svg id="line-graph" viewBox="0 0 400 400" role="img" aria-label="Coordinate graph for linear equation">
+            <g id="grid-lines"></g>
+            <line id="axis-x" x1="0" y1="200" x2="400" y2="200"></line>
+            <line id="axis-y" x1="200" y1="0" x2="200" y2="400"></line>
+            <line id="function-line" x1="0" y1="0" x2="400" y2="400"></line>
+          </svg>
+        </div>
+
+        <div class="value-table" id="value-table">
+          <!-- JS inserts x-y table here -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>Built for college algebra learning. Practice, explore, and master linear thinking.</p>
+      <p>&copy; 2026 Linear Learning Hub</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="hw5.js"></script>
+</body>
+</html>
